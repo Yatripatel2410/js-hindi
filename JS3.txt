@@ -1,0 +1,127 @@
+// singleton
+// object in depth
+// object literals
+
+// const mysym = Symbol("key1")
+
+// const Jsuser = {
+//   name: "Yanna",
+//   age: 20,
+//   [mysym]: "mykey1",     // symbol define karne ka tarika
+//   email: "user@yahooooo.com",
+//   location: "Ahmedabad",
+//   url: "udfr@123",
+//   isLoggedIn: false,
+//   lastLoginDays: ["Monday", "Friday"]
+// }
+
+// console.log(Jsuser.email)
+// console.log(Jsuser["age"])   // element access karne ka sahi tarika 
+
+// Jsuser.age = 19
+// Object.freeze(Jsuser)
+// Jsuser.age = 21
+// console.log(Jsuser)
+
+// object ko freeze kiye bina koi bhi operation perform karna to hi output aayega 
+// Jsuser.greeding = function(){
+//   console.log("Hello Js User")
+// }
+
+// Jsuser.greeding2 = function(){
+//   console.log(`Hello Js User, ${this.name}`)
+// }
+
+// console.log(Jsuser.greeding)
+// console.log("   ")
+// console.log(Jsuser.greeding())
+// console.log("   ")
+// console.log(Jsuser.greeding2())
+
+
+
+// const t = new Object()
+// const t1 = {}
+
+// t1.id = "123evf"
+// t1.name = "Sonyyam"
+// t1.isLoggedIn = false
+
+// console.log(Object.keys(t1));
+// console.log(Object.values(t1));
+// console.log(Object.entries(t1));
+
+// console.log(t1)
+
+// const r = {
+//   email: "user@yahooo.com",
+//   fullName: {
+//     userFullName: {
+//       firstName: "Yanna",
+//       lastName: "Patel"
+//     }
+//   }
+// }
+
+// console.log(r.fullName)
+// console.log(r.fullName.userFullName.lastName)
+
+// const o1 = {1: "a", 2: "b"}
+// const o2 = {3: "c", 4: "d"}
+
+// const o3 = {o1, o2}
+// console.log(o3)
+
+// const o4 = Object.assign({}, o1, o2)
+// console.log(o4)
+
+// const users = [
+//   {
+//     id: 1,
+//     email: "fyhb"
+//   },
+//   {
+//     id: 2,
+//     email: "hriuyh"
+//   },
+ 
+// ]
+
+
+// console.log(users[1].email)
+
+
+
+// Objects destructuring and JSON API
+
+// destructuring
+const c = {
+  cName: "JS in hindi",
+  price: "999",
+  cInstructor: "Yanna"
+}
+
+// console.log(c.cInstructor)
+
+const {cInstructor: C2} = c    
+// Ab direct value lene ke liye console.log(cInstructor) kar sakte hai
+console.log(C2)
+
+// API
+// pahele value xml ke form me aati thi jo bahot complex tha ab value JSON ke form me aati hai 
+
+// JSON stucture
+// {
+//   "name": "yanna",
+//   "cName": "Yans_class",
+//   "price": "...free..."
+// }
+
+// many time api is come in the form of array and this array include many types of objects 
+// [
+//   {},
+//   {},
+//   {},
+//   {}
+// ]
+

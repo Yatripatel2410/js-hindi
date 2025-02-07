@@ -1,0 +1,65 @@
+// Global and Local Scope
+
+
+// {} -> it is a scope
+// if {} come with any functions and if-else then it is consider as scope otherwise {} is also used in objects
+// var c = 300 // output must be 300 but here we get 30 bcz of function value so it's a problem
+// that type of problem can't occur in let and const
+if(true){
+  let a = 10
+  const b = 20
+  var c = 30
+}
+// console.log(a)
+// console.log(b)
+console.log(c)  // here a & b is give an error bcz it is declare in function not outside but var variable is print it is can't give any error so we use var in rare case
+
+//var c = 300
+// let a = 300
+// if (true) {
+//     let a = 10
+//     const b = 20
+//     // console.log("INNER: ", a);
+    
+// }
+
+
+
+// console.log(a);
+// console.log(b);
+// console.log(c);
+
+
+
+
+// function one(){
+//   const username = "yanna"
+//   function two(){
+//     const web = "instagram"
+//     console.log(username)
+//   }
+//   console.log(web)   // here error is occur bcz child function access all variables and all not parent access child variables
+//   two()
+// }
+// one()
+
+// if(true){
+//   const uname = "yanna "
+//   if(uname === "yanna "){
+//     const webisite = "Linkedln"
+//     console.log(uname + webisite)
+//   }
+//   console.log(webisite)  // error bcz not in scope
+// }
+// console.log(uname)   // error bcz not in scope
+
+// console.log(addone(5))
+// function addone(num){
+//   return num+1
+// }
+// addone(5)
+// console.log(addtwo(5))  // iss me error aayegi
+// const addtwo = function(num){
+//   return num+2
+// }
+// addtwo(5)

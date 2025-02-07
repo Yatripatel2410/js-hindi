@@ -1,0 +1,57 @@
+// this and arrow function
+// this->  use for current context
+// user ke pure scope me variable use karne ke liye this laga denge
+// arrow function ke andar this use nhi hota
+
+const user = {
+  uname: "yanna",
+  price: 999,
+  
+  welcomeMsg: function(){
+    console.log(`${this.uname} , welcome to my website`)
+    // console.log(this)
+  }
+  
+}
+// user.welcomeMsg()
+// user.uname = "Yans"
+// user.welcomeMsg()
+// console.log(this)
+
+// function one(){
+//   let uname = "yanna"
+//   console.log(this)
+//   console.log(this.uname)  //function ke andar this ka use nhi kar sakte output undefined aata hai
+// }
+// one()
+
+
+// const one = function(){
+//   let uname = "yanna"
+//   console.log(this)
+//   console.log(this.uname)  //function ke andar this ka use nhi kar sakte output undefined aata hai
+// }
+// one()
+
+// const one = () => {
+//   let uname = "Yanna"
+//   console.log(this.uname)
+//   console.log(this)
+// }
+// one()
+
+// basic arrow function
+// const addtwo = (n1, n2) => {
+//   return (n1 + n2)
+// }
+// console.log(addtwo(3, 4))
+
+// implicit return
+// const addtwo = (n1, n2) =>  (n1 + n2)
+// const addtwo = (n1, n2) =>  n1 + n2
+// returning Object
+// const addtwo = (n1, n2) =>  ({uname: "Yannnnna"})
+console.log(addtwo(3, 4))
+
+// const myArr = [2, 5, 3, 7, 8]
+// myArr.forEach(() => ())
